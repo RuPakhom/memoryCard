@@ -1,0 +1,22 @@
+.scoreContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1.5rem auto;
+    background-color: #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow:0 4px 6px rgba(0,0,0,0.05);
+    padding:1rem 1.5rem;
+    max-width: 400px;
+}
+
+.score{
+    font-size:1.125rem;
+    font-weight:600;
+    color:#1f2937;
+}
+
+.title{
+    font-weight: bold;
+    color:black;
+}
