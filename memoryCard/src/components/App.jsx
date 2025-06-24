@@ -11,8 +11,6 @@ function App() {
 
 
     function updateScore(item){
-      console.log("Clicked:", clicked)
-      console.log("BestScore:", bestScore)
       const alreadyClicked = clicked.includes(item)
       if(!alreadyClicked){
         const newClicked = [...clicked, item]

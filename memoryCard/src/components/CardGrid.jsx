@@ -1,6 +1,6 @@
 import Card from "./Card";
 import '../styles/CardGrid.css'
-import { useState } from "react";
+import { useState} from "react";
 
 const pokemons = [
   { id: 1, name: "pikachu" },
@@ -24,9 +24,10 @@ function shuffleArray(array) {
     }
 }
 
+    shuffleArray(pokemons)
+
 export default function CardGrid({updateScore}){
 
-    
 
     function handleClick(){
         const newList = [...list]
@@ -35,9 +36,6 @@ export default function CardGrid({updateScore}){
     }
 
     const [list, setList] = useState(pokemons)
-    console.log(list)
-    
-
 
     return(
         <div className="grid">{list.map(pokemon => {
